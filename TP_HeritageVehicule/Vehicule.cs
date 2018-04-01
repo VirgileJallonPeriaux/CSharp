@@ -1,9 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace ex3
+namespace TP_Heritage
 {
     class Vehicule
     {
@@ -22,11 +23,10 @@ namespace ex3
 
         public virtual void Afficher()
         {
-            Console.WriteLine("Immatriculation : "+_immatriculation);
-            Console.WriteLine("Année de construction : "+_anneeConstruction);
-            Console.WriteLine("Marque : "+_marque);
-            Console.WriteLine("Modele : "+_modele+"\n");
+            Console.WriteLine("Immatriculation : " + _immatriculation);
+            Console.WriteLine("Année de construction : " + _anneeConstruction);
+            Console.WriteLine("Marque : " + _marque);
+            Console.WriteLine("Modele : " + _modele + "\n");
         }
-
     }
 }
