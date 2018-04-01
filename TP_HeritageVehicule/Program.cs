@@ -18,22 +18,6 @@ namespace ex3
 
             for (int k = 0; k < Tab.Length; k++)
             {
-                // Tab[k].Afficher();
-                // Vehicule v = (Vehicule)Tab[k];
-                //v.Afficher();
-
-                /*if (Tab[k] is Voiture)
-                {
-                    Voiture v = (Voiture)Tab[k];
-                    v.Afficher();
-                }
-                else
-                {
-                    Camion c = (Camion)Tab[k];
-                    c.Afficher();
-                }*/
-
-                //Console.WriteLine("\n\n\n");
                 Tab[k].Afficher();
             }
             Console.ReadLine();
