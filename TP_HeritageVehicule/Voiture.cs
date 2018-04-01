@@ -1,16 +1,17 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace ex3
+namespace TP_Heritage
 {
-    class Voiture:Vehicule
+    class Voiture : Vehicule
     {
         private bool _decapotable;
         private bool _climatisation;
 
-        public Voiture(string immatriculation, int anneeConstruction, string marque, string modele, bool decapotable, bool climatisation):base(immatriculation,anneeConstruction,marque,modele)
+        public Voiture(string immatriculation, int anneeConstruction, string marque, string modele, bool decapotable, bool climatisation) : base(immatriculation, anneeConstruction, marque, modele)
         {
             _decapotable = decapotable;
             _climatisation = climatisation;
@@ -18,13 +19,8 @@ namespace ex3
 
         public override void Afficher()
         {
-            string decapotableS = "Non décapotable";
-            if (_decapotable) { decapotableS = "décapotable"; }
-            string climatisationS = "Sans climatisation";
-            if (_climatisation) { climatisationS = "Avec climatisation"; }
-            Console.WriteLine("Voiture "+decapotableS+" "+climatisationS);
+            Console.WriteLine("Voiture" +( _decapotable ? "" : " non") + " décapotable " + (_climatisation ? "avec" : "sans") + " climatisation");
             base.Afficher();
         }
-
     }
 }
